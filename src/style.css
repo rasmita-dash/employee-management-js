@@ -1,0 +1,98 @@
+:root{
+    --active-color: #888;
+    --btn-color: #ddd;
+    --modal-bg: #777;
+}
+.app-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.app-header-title{
+    font-size: 4rem;
+}
+
+.emp-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.emp-content>div{
+    border: 1px solid #ccc;
+    overflow-y: scroll;
+    margin: 4px;
+}
+.emp-list{
+    width: 30%;
+}
+
+.emp-details{
+    width: 70%;
+}
+
+.emp-list-header, .emp-details-header{
+    font-size: 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.emp-list--name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin:2px;
+    cursor: pointer;
+    background-color: var(--btn-color);
+}
+.emp-list--active{
+    background-color: var(--active-color)
+}
+
+.employee-info--label{
+    font-size: 1.5rem;
+}
+.employee-delete{
+    cursor: pointer;
+}
+.emp-details-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:15px
+}
+
+.add-emp-modal{
+    display:none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--modal-bg);
+    /* background: transparent; */
+}
+
+.add-employee-form{
+    width: 40%;
+    background-color: white;
+    box-shadow: 0 0 50px grey;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.add-employee-form input{
+    margin: 2px;
+    padding: 5px;
+}

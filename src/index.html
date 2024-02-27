@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="app-header">
+        <span class="app-header-title">Employee Management</span>
+        <span class="add-emp-btn">
+            <button>Add Employee</button>
+        </span>
+    </div>
+    <div class="emp-content">
+        <div class="emp-list">
+            <span class="emp-list-header">Employee List</span>
+            <div class="emp-list-container">
+
+            </div>
+        </div>
+        <div class="emp-details">
+            <span class="emp-details-header">Employee Details</span>
+            <div class="emp-details-container">
+            </div>
+        </div>
+    </div>
+
+    <div class="add-emp-modal">
+        <form class="add-employee-form">
+            <div>
+                <input type="text" name="firstName" placeholder="First Name" required/>
+                <input type="text" name="lastName" placeholder="Last Name" required/>
+            </div>
+            <input type="text" name="imageUrl" placeholder="Image URL (Optional)" />
+            <input type="email" name="email" placeholder="Email" required/>
+            <input type="number" name="contactNumber" placeholder="Contact" required/>
+            <input type="number" name="salary" placeholder="Salary" required/>
+            <input type="text" name="address" placeholder="Address" required/>
+            <input type="date" name="dob" placeholder="Date of Birth" class="addEmployee_create--dob" required/>
+            <input type="submit" class="addEmployee_create--submit" value="Submit">
+        </form>
+    </div>
+    
+    <script src="./index.js"> </script>
+    <link rel="stylesheet" href="./style.css">
+</body>
+</html>
